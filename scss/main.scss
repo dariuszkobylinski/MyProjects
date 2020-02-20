@@ -1,0 +1,627 @@
+$background_main:#F5F5F5;
+$padding_main: 10px;
+
+@mixin message-footer() {
+  padding: $padding_main / 2;
+  background: $background_main;
+  border: 1px solid black;
+  font-size: 1.25rem;
+  color: black;
+  border-radius: 2px;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background_main;
+  min-width: 400px;
+}
+
+.page-header {
+  display: block;
+}
+
+.main-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.burger {
+  visibility: hidden;
+  //background-color: dodgerblue;
+  width: 55px;
+  height: 50px;
+  position: absolute;
+  top: 270px;
+  left: 10px;
+}
+
+.burger_line {
+  background-color: darkgray;
+  width: 35px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 8px;
+
+}
+
+.container {
+  padding: $padding_main;
+  //background-color: yellow;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.box_image {
+  background-size: cover;
+  width: 225px;
+  height: 225px;
+}
+
+.slider {
+  width: calc(100% - 450px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //display: grid;
+  //grid-template-rows: 1fr;
+  //grid-template-columns: 2fr;
+  //gap: 10px;
+}
+
+.contact {
+  background-color: white;
+  width: 225px;
+  height: 225px;
+}
+
+.box_image_slider {
+  //padding:$padding_main;
+  //background-size: contain;
+
+  height: 375px;
+  width: calc(100% - 10px);
+  //height: calc(0,67*width);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0.8;
+}
+
+.page-header {
+  padding: $padding_main;
+  //background-color: orangered;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.main {
+  padding: $padding_main;
+  //background-color: blueviolet;
+  max-width: 100%;
+  min-height: 100px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.h2Text {
+  margin: 20px 0px;
+}
+
+.info {
+  padding: $padding_main;
+  background-color: white;
+  max-width: 100%;
+  min-height: 100px;
+  border: 3px darkgray solid;
+  font-size: 1.5rem;
+
+}
+
+.classItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: $padding_main;
+  border-bottom: 3px solid darkgrey;
+  border-top: 3px solid darkgray;
+  margin-top: 25px;
+}
+
+.text_contact {
+  margin: 0px;
+  padding: $padding_main / 2;
+  text-align: center;
+  font-size: 24px;
+}
+
+.classLink {
+  padding-left: $padding_main;
+  text-decoration: none;
+  list-style: none;
+}
+
+.textForImage {
+  position: absolute;
+  top: -50px;
+
+}
+
+.classLinkHref {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.slider_left,
+.slider_right {
+  position: relative;
+  padding: $padding_main/2;
+  //background-color: yellowgreen;
+  width: calc((100% - 20px) / 2);
+  //height: calc(0,67*width);
+  height: 375px;
+  top: 0px;
+  left: 0px;
+
+}
+
+.sliderText_left {
+  z-index: 1;
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  top: calc((100% / 2) - 4rem);
+  //left: 0px
+  left: calc((100% - 5em) / 2);
+  width: 150px;
+  height: 50px;
+  padding: $padding_main;
+  text-align: center;
+  margin: 0;
+  visibility: hidden;
+
+
+}
+
+.page-footer {
+  min-height: 200px;
+  max-width: calc(100% - 20px);
+  //background-color:lightgray;
+  padding: $padding_main;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-top: 3px solid darkgrey;
+  //gap:10px;
+  //grid-template-areas: "message" "advertasing" "footer_summmary" "footer_summary";
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+
+}
+
+//.main-footer {
+//  background-color: grey;
+//  min-height: 100px;
+//  //max-width: 150px;
+//  flex-grow: 1;
+//  justify-items: center;
+//
+//
+//}
+.message-footer {
+  background-color: lightgray;
+  padding: $padding_main;
+  max-width: calc(100% - $padding_main * 2);
+  display: grid;
+  //grid-template-rows: 1fr 1fr 1fr 6fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "textFooterH3 textFooterH3" "imieNazwisko eMail" "title title" "message message" "btnMessage btnMessage" "errorMessage errorMessage";
+  gap: 10px;
+  border: 3px solid darkgray;
+}
+
+.h3TextLeft {
+  grid-area: textFooterH3;
+  font-size: 20px;
+  padding: $padding_main;
+  margin: 0px;
+  text-align: center;
+}
+
+.classImieNazwisko {
+  grid-area: imieNazwisko;
+  @include message-footer();
+}
+
+.classEmail {
+  grid-area: eMail;
+  @include message-footer();
+}
+
+.classTitle {
+  grid-area: title;
+  @include message-footer();
+}
+
+.classMessage {
+  grid-area: message;
+  @include message-footer();
+}
+
+.classBtn_footer {
+  grid-area: btnMessage;
+  @include message-footer();
+  background-color: black;
+  color: ghostwhite;
+  cursor: pointer;
+}
+
+.classErrorMessage {
+  grid-area: errorMessage;
+  @include message-footer();
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+  font-style: italic;
+  visibility: hidden;
+}
+
+.page-link-social {
+  min-height: 100%;
+  background-color: lightgray;
+  display: block;
+  border: 3px solid darkgray;
+  border-left: 0px;
+}
+
+.classAdvertising {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: $padding_main;
+  //display: grid;
+  //grid-template-rows: 1fr;
+  //grid-template-columns: 1fr 1fr;
+  //gap: 10px;
+
+}
+
+.h3TextRight {
+  font-size: 20px;
+  color: black;
+  margin: 0px;
+  padding: $padding_main*2;
+  max-width: 100%;
+  text-align: center;
+}
+
+.classSocialLink {
+  max-width: 100%;
+  height: 40px;
+  background: black;
+  padding: $padding_main;
+  margin-top: 30px;
+}
+
+.box_image_advertising {
+  height: 250px;
+  width: calc(100% - 10px);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.classAdvertising_left,
+.classAdvertising_right {
+  position: relative;
+  padding: $padding_main/2;
+  background-color: yellowgreen;
+  width: calc((100% - 20px) / 2);
+  height: 250px;
+  top: 0px;
+  left: 0px;
+}
+
+.advertisingText {
+  z-index: 1;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 75px;
+  //left: 0px
+  left: calc((100% - 5em) / 2);
+  width: 150px;
+  height: 50px;
+  padding: $padding_main;
+  text-align: center;
+  margin: 0;
+  visibility: hidden;
+}
+
+.footer_summary {
+  padding: $padding_main;
+  background-color: blueviolet;
+  max-width: 100%;
+  height: 50px;
+  color: black;
+  font-size: 16px;
+}
+
+.mainONas {
+  padding: $padding_main;
+  background-color: blueviolet;
+  max-width: 100%;
+  min-height: 300px;
+
+}
+
+.box_image_ONas {
+  float: right;
+  max-width: 300px;
+}
+
+.mainONas {
+  max-width: 100%;
+  min-height: 300px;
+}
+
+.classContact {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #daebee;
+  border-radius: 2px;
+}
+
+.classContactDetail,
+.classContactOpening {
+  padding: $padding_main;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 1225px) {
+  .container {
+    background-color: blueviolet;
+  }
+
+  .slider_right {
+    display: none;
+  }
+  .slider {
+    display: inline-block;
+  }
+  .slider_left {
+    width: 100%;
+  }
+
+  .classAdvertising_right {
+    display: none;
+  }
+  .classAdvertising {
+    display: inline-block;
+    width: 100%;
+  }
+  .classAdvertising_left {
+    width: calc(100% - 100px);
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    background-color: grey;
+  }
+
+  .slider_right {
+    display: none;
+  }
+  .slider {
+    display: inline-block;
+  }
+  .slider_left {
+    width: 100%;
+    height: 300px;
+  }
+  .box_image_slider {
+    height: 300px;
+  }
+
+  .classAdvertising_right {
+    display: none;
+  }
+  .classAdvertising {
+    display: inline-block;
+    width: 100%;
+
+  }
+  .classAdvertising_left {
+    width: calc(100% - 100px);
+    margin: auto;
+    height: 225px;
+
+  }
+  .box_image_advertising {
+    height: 225px;
+  }
+}
+
+@media (max-width: 950px) {
+  .page-footer {
+    display: block;
+  }
+  .box_image_advertising {
+    height: 350px;
+  }
+  .classAdvertising_left {
+    height: 350px;
+  }
+}
+
+@media (max-width: 875px) {
+  .slider_left {
+    width: 100%;
+    height: 225px;
+  }
+  .box_image_slider {
+    height: 225px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-header {
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .classItem {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 320px;
+    background-color: grey;
+    border: none;
+    z-index: 1;
+  }
+  .page-nav {
+    display: block;
+  }
+  .page-header {
+    position: relative;
+  }
+  .page-logo {
+    margin: 30px 0px 30px 0px;
+  }
+  .contact {
+    width: 80%;
+  }
+  .slider {
+    width: 80%;
+    height: 300px;
+  }
+  .box_image_slider {
+    max-width: 100%;
+    height: 300px;
+  }
+  .slider_left {
+    height: 300px;
+    //margin:20px 0px 20px 0px;
+  }
+  .burger {
+    visibility: visible;
+    //display: block;
+  }
+  .main {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+  .main-header {
+    height: 700px;
+  }
+  .border_solid {
+    max-width: 100%;
+    background-color: black;
+    height: 3px;
+    margin-top: 5px;
+  }
+  .border_solid_thin {
+    max-width: 100%;
+    background-color: black;
+    height: 1px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 675px) {
+  .message-footer {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .message-footer input, textarea {
+    margin-bottom: 10px;
+  }
+  .box_image_advertising {
+    height: 275px;
+  }
+  .classAdvertising_left {
+    height: 275px;
+  }
+}
+@media (max-width: 525px) {
+
+  .box_image_advertising {
+    height: 250px;
+  }
+  .classAdvertising_left {
+    height: 250px;
+  }
+  //.footer_summary {
+  //  height: 80px;
+  //}
+  //.box_image_slider {
+  //  height: 225px;
+  //}
+  //.slider_left {
+  //  height: 225px;
+  //}
+}
+
+@media (max-width: 425px) {
+
+  .box_image_advertising {
+    height: 225px;
+  }
+  .classAdvertising_left {
+    height: 225px;
+  }
+  .footer_summary {
+    height: 80px;
+  }
+  .box_image_slider {
+    height: 225px;
+  }
+  .slider_left {
+    height: 225px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .box_image_advertising {
+    height: 200px;
+  }
+  .classAdvertising_left {
+    height: 200px;
+  }
+  //.footer_summary {
+  //  height: 80px;
+  //}
+  .box_image_slider {
+    height: 200px;
+  }
+  .slider_left {
+    height: 200px;
+  }
+}
+
+
+.visible {
+  visibility: visible;
+
+}

@@ -1,2 +1,1 @@
-# MyProjects
-Mój projekt zaliczeniowy
+# Projekt_zaliczeniowy_1
