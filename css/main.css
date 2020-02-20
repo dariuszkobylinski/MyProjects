@@ -78,8 +78,8 @@ body {
 }
 
 .box_image_slider {
-  height: 375px;
   width: calc(100% - 10px);
+  height: 400px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -279,7 +279,7 @@ body {
   font-weight: bold;
   color: orangered;
   font-style: italic;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .page-link-social {

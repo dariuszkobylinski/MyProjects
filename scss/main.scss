@@ -82,10 +82,8 @@ body {
 .box_image_slider {
   //padding:$padding_main;
   //background-size: contain;
-
-  height: 375px;
   width: calc(100% - 10px);
-  //height: calc(0,67*width);
+  height: 400px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -269,7 +267,7 @@ body {
   font-weight: bold;
   color: orangered;
   font-style: italic;
-  visibility: hidden;
+  visibility:visible;
 }
 
 .page-link-social {
