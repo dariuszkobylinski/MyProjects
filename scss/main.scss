@@ -1,9 +1,9 @@
-$background_main:#F5F5F5;
+$background_main: #F5F5F5;
 $padding_main: 10px;
 
 @mixin message-footer() {
   padding: $padding_main / 2;
-  background: $background_main;
+  background:  $background_main;
   border: 1px solid black;
   font-size: 1.25rem;
   color: black;
@@ -15,6 +15,8 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: $background_main;
   min-width: 400px;
+  background-image: url("/img/rain-863339_1920.jpg");
+  background-size: cover;
 }
 
 .page-header {
@@ -51,15 +53,18 @@ body {
 
 .container {
   padding: $padding_main;
-  //background-color: yellow;
-  max-width: 100%;
+  background-color: $background_main;
+  width: 75%;
   min-height: 100px;
+  margin: auto;
+  box-shadow: 10px 3px 10px darkgray, darkgrey -3px 3px 10px, 3px -3px 10px
 }
 
 .box_image {
   background-size: cover;
   width: 225px;
   height: 225px;
+  margin: 5px;
 }
 
 .slider {
@@ -77,13 +82,14 @@ body {
   background-color: white;
   width: 225px;
   height: 225px;
+  margin: 5px;
 }
 
 .box_image_slider {
   //padding:$padding_main;
   //background-size: contain;
-  width: calc(100% - 10px);
-  height: 400px;
+  width: calc(100% - 0px);
+  height: 300px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -116,7 +122,7 @@ body {
   background-color: white;
   max-width: 100%;
   min-height: 100px;
-  border: 3px darkgray solid;
+  border: 1px darkgray solid;
   font-size: 1.5rem;
 
 }
@@ -129,7 +135,7 @@ body {
   padding: $padding_main;
   border-bottom: 3px solid darkgrey;
   border-top: 3px solid darkgray;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .text_contact {
@@ -159,11 +165,11 @@ body {
 .slider_left,
 .slider_right {
   position: relative;
-  padding: $padding_main/2;
+  //padding: $padding_main/2;
   //background-color: yellowgreen;
-  width: calc((100% - 20px) / 2);
+  width: calc((100% - 0px) / 2);
   //height: calc(0,67*width);
-  height: 375px;
+  height: 300px;
   top: 0px;
   left: 0px;
 
@@ -221,7 +227,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "textFooterH3 textFooterH3" "imieNazwisko eMail" "title title" "message message" "btnMessage btnMessage" "errorMessage errorMessage";
   gap: 10px;
-  border: 3px solid darkgray;
+  border: 1px solid darkgray;
 }
 
 .h3TextLeft {
@@ -258,6 +264,7 @@ body {
   background-color: black;
   color: ghostwhite;
   cursor: pointer;
+  height: 40px;
 }
 
 .classErrorMessage {
@@ -267,14 +274,15 @@ body {
   font-weight: bold;
   color: orangered;
   font-style: italic;
-  visibility:visible;
+  visibility: hidden;
+  margin: 0px;
 }
 
 .page-link-social {
   max-height: 100%;
   background-color: lightgray;
   display: block;
-  border: 3px solid darkgray;
+  border: 1px solid darkgray;
   border-left: 0px;
 }
 
@@ -560,6 +568,7 @@ body {
     height: 275px;
   }
 }
+
 @media (max-width: 525px) {
 
   .box_image_advertising {

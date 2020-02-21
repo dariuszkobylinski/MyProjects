@@ -2,6 +2,8 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #F5F5F5;
   min-width: 400px;
+  background-image: url("/img/rain-863339_1920.jpg");
+  background-size: cover;
 }
 
 .page-header {
@@ -48,14 +50,19 @@ body {
 
 .container {
   padding: 10px;
-  max-width: 100%;
+  background-color: #F5F5F5;
+  width: 75%;
   min-height: 100px;
+  margin: auto;
+  -webkit-box-shadow: 10px 3px 10px darkgray, darkgrey -3px 3px 10px, 3px -3px 10px;
+          box-shadow: 10px 3px 10px darkgray, darkgrey -3px 3px 10px, 3px -3px 10px;
 }
 
 .box_image {
   background-size: cover;
   width: 225px;
   height: 225px;
+  margin: 5px;
 }
 
 .slider {
@@ -75,11 +82,12 @@ body {
   background-color: white;
   width: 225px;
   height: 225px;
+  margin: 5px;
 }
 
 .box_image_slider {
-  width: calc(100% - 10px);
-  height: 400px;
+  width: calc(100% - 0px);
+  height: 300px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -110,7 +118,7 @@ body {
   background-color: white;
   max-width: 100%;
   min-height: 100px;
-  border: 3px darkgray solid;
+  border: 1px darkgray solid;
   font-size: 1.5rem;
 }
 
@@ -128,7 +136,7 @@ body {
   padding: 10px;
   border-bottom: 3px solid darkgrey;
   border-top: 3px solid darkgray;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .text_contact {
@@ -157,9 +165,8 @@ body {
 .slider_left,
 .slider_right {
   position: relative;
-  padding: 5px;
-  width: calc((100% - 20px) / 2);
-  height: 375px;
+  width: calc((100% - 0px) / 2);
+  height: 300px;
   top: 0px;
   left: 0px;
 }
@@ -197,7 +204,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "textFooterH3 textFooterH3" "imieNazwisko eMail" "title title" "message message" "btnMessage btnMessage" "errorMessage errorMessage";
   gap: 10px;
-  border: 3px solid darkgray;
+  border: 1px solid darkgray;
 }
 
 .h3TextLeft {
@@ -264,6 +271,7 @@ body {
   background-color: black;
   color: ghostwhite;
   cursor: pointer;
+  height: 40px;
 }
 
 .classErrorMessage {
@@ -279,14 +287,15 @@ body {
   font-weight: bold;
   color: orangered;
   font-style: italic;
-  visibility: visible;
+  visibility: hidden;
+  margin: 0px;
 }
 
 .page-link-social {
   max-height: 100%;
   background-color: lightgray;
   display: block;
-  border: 3px solid darkgray;
+  border: 1px solid darkgray;
   border-left: 0px;
 }
 
