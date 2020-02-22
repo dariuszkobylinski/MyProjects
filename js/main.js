@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnSendEmail.addEventListener("click", () => {
         console.log(formInputField);
         console.log("dziłaam");
-        if (formInputField.children[1].value==="") {
+        if (formInputField.children[1].value==="" || formInputField.children[2].value==="" || formInputField.children[3].value==="" || formInputField.children[4].value==="") {
             formInputField.children[6].style.visibility="visible";
             console.log("brak");
         }
@@ -35,14 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         else {
             textContact.children[1].style.visibility="visible";
             textContact.children[1].style.color="darkorange";
-            textContact.children[1].style.fontStyle="italic";
+            textContact.children[1].style.fontStyle="bold";
         }
 
     },1000);
-    clearInterval();
-
-
-
-
+   clearInterval();
 
 });

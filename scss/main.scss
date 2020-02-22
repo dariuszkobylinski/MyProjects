@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  //height: 320px;
 }
 
 .burger {
@@ -90,7 +91,7 @@ body {
   //padding:$padding_main;
   //background-size: contain;
   width: calc(100% - 0px);
-  height: 300px;
+  height: 310px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -136,7 +137,7 @@ body {
   padding: $padding_main;
   border-bottom: 3px solid darkgrey;
   border-top: 3px solid darkgray;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .text_contact {
@@ -205,7 +206,7 @@ body {
 }
 
 .page-footer {
-  height: 540px;
+  height: 480px;
   max-width: calc(100% - 20px);
   padding: $padding_main;
   display: grid;
@@ -322,37 +323,67 @@ body {
 
 .classSocialLink {
   height: 40px;
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
-  margin-top: 25px;
-  background: maroon ;
+  margin-top: 15px;
+  //background: maroon ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   //background-image: url(/img/social_media_icon.png);
   //background-size: auto;
   //background-position: top -65px left -11px;
 }
-//.classSocialLinkImg {
-//  height: 36px;
-//  width: 34px;
-//  padding: 10px;
-//  margin-top: 2px;
-//  background-image: url(/img/social_media_icon.png);
-//  background-size: auto;
-//  background-position: top -65px left -11px;
-//}
+.classSocialLinkFacebook {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -70px left -13px;
+}
+.classSocialLinkYouTube {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -127px left -13px;
+}
+.classSocialLinkInstagram {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -127px left -125px;
+}
+.classSocialLinkYouTwitter {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -70px left -69px;
+}
 
 .box_image_advertising {
   height: 250px;
   width: calc(100% - 10px);
   position: absolute;
   visibility: hidden;
-  opacity: 0.5;
+  //opacity: 0.5;
 }
 
 .classAdvertising_left,
 .classAdvertising_right {
   position: relative;
   padding: $padding_main/2;
-  background-color: yellowgreen;
+  //background-color: yellowgreen;
   width: calc((100% - 20px) / 2);
   height: 250px;
   top: 0px;
@@ -379,7 +410,7 @@ body {
   padding: $padding_main;
   background-color: $background_main;
   max-width: 100%;
-  height: 50px;
+  height: 15px;
   color: black;
   font-size: 16px;
 }

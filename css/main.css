@@ -88,7 +88,7 @@ body {
 
 .box_image_slider {
   width: calc(100% - 0px);
-  height: 300px;
+  height: 310px;
   position: absolute;
   visibility: hidden;
   opacity: 0.8;
@@ -137,7 +137,7 @@ body {
   padding: 10px;
   border-bottom: 3px solid darkgrey;
   border-top: 3px solid darkgray;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .text_contact {
@@ -199,7 +199,7 @@ body {
 }
 
 .page-footer {
-  height: 540px;
+  height: 480px;
   max-width: calc(100% - 20px);
   padding: 10px;
   display: grid;
@@ -335,10 +335,58 @@ body {
 
 .classSocialLink {
   height: 40px;
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
-  margin-top: 25px;
-  background: maroon;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.classSocialLinkFacebook {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -70px left -13px;
+}
+
+.classSocialLinkYouTube {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -127px left -13px;
+}
+
+.classSocialLinkInstagram {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -127px left -125px;
+}
+
+.classSocialLinkYouTwitter {
+  height: 35px;
+  width: 34px;
+  padding: 10px;
+  margin-top: -1px;
+  background-image: url(/img/social_media_icon.png);
+  background-size: auto;
+  background-position: top -70px left -69px;
 }
 
 .box_image_advertising {
@@ -346,14 +394,12 @@ body {
   width: calc(100% - 10px);
   position: absolute;
   visibility: hidden;
-  opacity: 0.5;
 }
 
 .classAdvertising_left,
 .classAdvertising_right {
   position: relative;
   padding: 5px;
-  background-color: yellowgreen;
   width: calc((100% - 20px) / 2);
   height: 250px;
   top: 0px;
@@ -379,7 +425,7 @@ body {
   padding: 10px;
   background-color: #F5F5F5;
   max-width: 100%;
-  height: 50px;
+  height: 15px;
   color: black;
   font-size: 16px;
 }
