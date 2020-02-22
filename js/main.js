@@ -26,6 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
         pageNavigation.classList.toggle("visible");
     });
 
+    let textContact=document.querySelector(".contact");
+
+    setInterval(()=> {
+        if (textContact.children[1].style.visibility==="visible") {
+            textContact.children[1].style.visibility="hidden";
+        }
+        else {
+            textContact.children[1].style.visibility="visible";
+            textContact.children[1].style.color="darkorange";
+            textContact.children[1].style.fontStyle="italic";
+        }
+
+    },1000);
+    clearInterval();
+
+
 
 
 

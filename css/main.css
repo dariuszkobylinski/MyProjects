@@ -63,6 +63,7 @@ body {
   width: 225px;
   height: 225px;
   margin: 5px;
+  cursor: url("index.html");
 }
 
 .slider {
@@ -159,7 +160,18 @@ body {
 
 .classLinkHref {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.75em;
+  margin-right: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+.classLinkHref:hover {
+  color: darkorange;
+  font-style: italic;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
 }
 
 .slider_left,
@@ -322,11 +334,11 @@ body {
 }
 
 .classSocialLink {
-  max-width: 100%;
   height: 40px;
-  background: black;
+  width: 100%;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 25px;
+  background: maroon;
 }
 
 .box_image_advertising {
