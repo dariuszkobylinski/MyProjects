@@ -36,7 +36,7 @@ body {
   width: 55px;
   height: 50px;
   position: absolute;
-  top: 250px;
+  top: 255px;
   left: 10px;
 }
 .burger_line {
@@ -471,7 +471,7 @@ body {
   .container {
     width: calc(100% - 20px);
     box-shadow: none;
-    margin: auto;
+    //margin: auto;
   }
   body {
     margin: 0;
@@ -488,6 +488,19 @@ body {
   .box_image_slider {
     height: 300px;
   }
+
+  .classAdvertising_right {
+    display: none;
+
+  }
+  .classAdvertising_left{
+    width: 400px;
+  }
+  .box_image_advertising {
+    width: 400px;
+  }
+
+
 }
 @media (max-width: 1175px) {
   .container {
@@ -521,6 +534,15 @@ body {
   .slider {
     width: calc(100% - 400px);
   }
+  .page-footer {
+    display: block;
+  }
+  .classAdvertising_right {
+    display: block;
+    width: 400px;
+
+  }
+
 }
 @media (max-width: 1025px) {
   .container {
@@ -625,23 +647,111 @@ body {
   //}
 }
 
+@media (max-width: 900px) {
+  .box_image_advertising{
+    width: 375px;
+    height: 225px;
+  }
+  .classAdvertising_left, .classAdvertising_right {
+    width: 375px;
+    height: 225px;
+  }
+
+  }
+
+@media (max-width: 850px) {
+  .box_image_advertising{
+    width: 350px;
+    height: 200px;
+  }
+
+  .classAdvertising_left, .classAdvertising_right {
+    width: 350px;
+    height: 200px;
+  }
+
+}
+
+@media (max-width: 775px) {
+  .box_image_advertising{
+    width: 325px;
+    height: 185px;
+  }
+
+  .classAdvertising_left, .classAdvertising_right {
+    width: 325px;
+    height: 185px;
+  }
+
+}
+
+@media (max-width: 725px) {
+  .box_image_advertising {
+    width: 300px;
+    height: 175px;
+  }
+
+  .classAdvertising_left, .classAdvertising_right {
+    width: 300px;
+    height: 175px;
+  }
+
+  .box_image_slider {
+    height: 375px;
+  }
+
+  .slider_left {
+    height: 375px;
+  }
+.page-header {
+  height: 725px;
+}
+
+}
 @media (max-width: 675px) {
   .message-footer {
     display: flex;
     flex-direction: column;
-
   }
   .message-footer input, textarea {
     margin-bottom: 10px;
   }
   .box_image_advertising {
     height: 275px;
+    width: 400px;
   }
   .classAdvertising_left {
     height: 275px;
+    width: 400px;
+  }
+
+  .classAdvertising_right {
+   display: none;
+  }
+  .box_image_slider {
+    height: 325px;
+  }
+
+  .slider_left {
+    height: 325px;
+  }
+  .page-header {
+    height: 675px;
   }
 }
 
+@media (max-width: 575px) {
+  .box_image_slider {
+    height: 300px;
+  }
+
+  .slider_left {
+    height: 300px;
+  }
+  .page-header {
+    height: 650px;
+  }
+}
 @media (max-width: 525px) {
 
   .box_image_advertising {
@@ -649,6 +759,17 @@ body {
   }
   .classAdvertising_left {
     height: 250px;
+  }
+
+  .box_image_slider {
+    height: 275px;
+  }
+
+  .slider_left {
+    height: 275px;
+  }
+  .page-header {
+    height: 625px;
   }
   //.footer_summary {
   //  height: 80px;
@@ -660,25 +781,55 @@ body {
   //  height: 225px;
   //}
 }
-
-@media (max-width: 425px) {
+//@media (max-width: 525px) {
+//
+//  .box_image_advertising {
+//    height: 235px;
+//  }
+//  .classAdvertising_left {
+//    height: 235px;
+//  }
+//
+//}
+@media (max-width: 475px) {
 
   .box_image_advertising {
-    height: 225px;
+    width:calc(100% - 20px);
   }
   .classAdvertising_left {
-    height: 225px;
-  }
-  .footer_summary {
-    height: 80px;
+    width:calc(100% - 20px);
   }
   .box_image_slider {
-    height: 225px;
+    height: 250px;
   }
+
   .slider_left {
-    height: 225px;
+    height: 250px;
   }
+  .page-header {
+    height: 600px;
+  }
+
 }
+//@media (max-width: 425px) {
+//
+//  .box_image_advertising {
+//    height: 225px;
+//    width:calc(100% - 20px);
+//  }
+//  .classAdvertising_left {
+//    height: 225px;
+//  }
+//  .footer_summary {
+//    height: 80px;
+//  }
+//  .box_image_slider {
+//    height: 225px;
+//  }
+//  .slider_left {
+//    height: 225px;
+//  }
+//}
 
 @media (max-width: 425px) {
 
@@ -692,10 +843,13 @@ body {
   //  height: 80px;
   //}
   .box_image_slider {
-    height: 200px;
+    height: 225px;
   }
   .slider_left {
-    height: 200px;
+    height: 225px;
+  }
+  .page-header {
+    height: 575px;
   }
 }
 
