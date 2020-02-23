@@ -492,14 +492,14 @@ body {
 }
 
 @media (max-width: 1400px) {
-  body {
-    margin: 0px;
-  }
   .container {
-    width: 100%;
+    width: calc(100% - 20px);
     -webkit-box-shadow: none;
             box-shadow: none;
     margin: auto;
+  }
+  body {
+    margin: 0;
   }
 }
 
@@ -618,7 +618,7 @@ body {
   }
   .page-header {
     position: relative;
-    height: 800px;
+    height: 775px;
   }
   .burger {
     visibility: visible;
@@ -640,24 +640,13 @@ body {
   }
   .main {
     display: block;
+    border-top: 3px solid darkgrey;
   }
   .contact {
     display: none;
   }
   .main-header {
     height: 700px;
-  }
-  .border_solid {
-    max-width: 100%;
-    background-color: black;
-    height: 3px;
-    margin-top: 5px;
-  }
-  .border_solid_thin {
-    max-width: 100%;
-    background-color: black;
-    height: 1px;
-    margin-top: 10px;
   }
 }
 
