@@ -149,9 +149,10 @@ body {
 }
 
 .classLink {
-  padding-left: 10px;
+  padding: 5px;
   text-decoration: none;
   list-style: none;
+  margin: 0px;
 }
 
 .textForImage {
@@ -614,8 +615,8 @@ body {
     visibility: hidden;
     display: block;
     position: absolute;
-    left: 10px;
-    top: 320px;
+    left: 15px;
+    top: 290px;
     background-color: grey;
     border: none;
     z-index: 1;

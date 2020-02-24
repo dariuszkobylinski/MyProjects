@@ -32,7 +32,6 @@ body {
 
 .burger {
   visibility: hidden;
-  //background-color: dodgerblue;
   width: 55px;
   height: 50px;
   position: absolute;
@@ -48,7 +47,6 @@ body {
   align-items: center;
   margin: auto;
   margin-top: 8px;
-
 }
 
 .container {
@@ -148,9 +146,10 @@ body {
 }
 
 .classLink {
-  padding-left: $padding_main;
+  padding: $padding_main / 2;
   text-decoration: none;
   list-style: none;
+  margin: 0px;
 }
 
 .textForImage {
@@ -583,8 +582,8 @@ body {
     visibility: hidden;
     display: block;
     position: absolute;
-    left: 10px;
-    top: 320px;
+    left: 15px;
+    top: 290px;
     background-color: grey;
     border: none;
     z-index: 1;
@@ -852,9 +851,6 @@ body {
     height: 575px;
   }
 }
-
-
 .visible {
   visibility: visible;
-
 }

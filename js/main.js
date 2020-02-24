@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    let btnBurger = document.querySelector(".burger");
+    let pageNavigation = document.querySelector(".classItem");
+    btnBurger.addEventListener("click", () => {
+        pageNavigation.classList.toggle("visible");
+    });
+    pageNavigation.addEventListener("mouseleave", () => {
+        console.log(pageNavigation);
+        pageNavigation.classList.remove("visible");
+        pageNavigation.classList.toggle("visible");
+    });
+
+
     let btnSendEmail=document.querySelector(".classBtn_footer");
 
     let formInputField=document.querySelector(".message-footer");
@@ -15,19 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
-    let btnBurger = document.querySelector(".burger");
-    let pageNavigation = document.querySelector(".classItem");
-    console.log(pageNavigation);
-    btnBurger.addEventListener("click", () => {
-        pageNavigation.classList.toggle("visible");
-    });
-    pageNavigation.addEventListener("mouseleave", () => {
-        pageNavigation.classList.toggle("visible");
-    });
-
     let textContact=document.querySelector(".contact");
-
     setInterval(()=> {
         if (textContact.children[1].style.visibility==="visible") {
             textContact.children[1].style.visibility="hidden";
