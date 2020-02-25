@@ -479,7 +479,7 @@ body {
 
 @media (max-width: 1250px) {
   .container {
-    background-color: blue;
+    background-color: $background_main;
   }
   .slider_left, .slider_right {
     height: 300px;
@@ -503,7 +503,7 @@ body {
 }
 @media (max-width: 1175px) {
   .container {
-    background-color: blue;
+    background-color: $background_main;
   }
   .slider_left, .slider_right {
     height: 275px;
@@ -514,7 +514,7 @@ body {
 }
 @media (max-width: 1100px) {
   .container {
-    background-color: yellow;
+    background-color: $background_main;
   }
   .slider_left, .slider_right {
     height: 250px;
@@ -545,7 +545,7 @@ body {
 }
 @media (max-width: 1025px) {
   .container {
-    background-color: blue;
+    background-color: $background_main;
   }
   .slider_left, .slider_right {
     height: 210px;
@@ -565,9 +565,10 @@ body {
 @media (max-width: 975px) {
   .main-header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .slider_right {
        display: none;
