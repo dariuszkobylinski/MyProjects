@@ -15,7 +15,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: $background_main;
   min-width: 400px;
-  background-image: url("/img/rain-863339_1920.jpg");
+  background-image: url("../img/rain-863339_1920.jpg");
   background-size: cover;
 
 }
@@ -341,7 +341,7 @@ body {
   width: 34px;
   padding: 10px;
   margin-top: -1px;
-  background-image: url(/img/social_media_icon.png);
+  background-image: url("/img/social_media_icon.png");
   background-size: auto;
   background-position: top -70px left -13px;
 }
@@ -350,7 +350,7 @@ body {
   width: 34px;
   padding: 10px;
   margin-top: -1px;
-  background-image: url(/img/social_media_icon.png);
+  background-image: url("../img/social_media_icon.png");
   background-size: auto;
   background-position: top -127px left -13px;
 }
@@ -359,7 +359,7 @@ body {
   width: 34px;
   padding: 10px;
   margin-top: -1px;
-  background-image: url(/img/social_media_icon.png);
+  background-image: url("../img/social_media_icon.png");
   background-size: auto;
   background-position: top -127px left -125px;
 }
@@ -368,7 +368,7 @@ body {
   width: 34px;
   padding: 10px;
   margin-top: -1px;
-  background-image: url(/img/social_media_icon.png);
+  background-image: url("../img/social_media_icon.png");
   background-size: auto;
   background-position: top -70px left -69px;
 }
@@ -481,7 +481,7 @@ body {
 @media (max-width: 1250px) {
   .container {
     background-color: $background_main;
-    height: 2590px;
+    //height: 2590px;
   }
   .slider_left, .slider_right {
     height: 300px;

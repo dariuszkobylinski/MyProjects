@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         pageNavigation.classList.toggle("visible");
     });
 
-    pageNavigation.addEventListener("mouseleave", () => {
-        pageNavigation.classList.toggle("visible");
+    pageNavigation.addEventListener("touch", () => {
+        console.log("Poszłooooo");
+         pageNavigation.classList.remove("visible");
     });
 
 
