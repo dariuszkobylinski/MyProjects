@@ -27,7 +27,7 @@ body {
   width: 55px;
   height: 50px;
   position: absolute;
-  top: 180px;
+  top: 170px;
   left: 15px;
 }
 
@@ -62,7 +62,7 @@ body {
   background-size: cover;
   width: 225px;
   height: 225px;
-  margin: 5px;
+  margin: auto;
   cursor: url("index.html");
 }
 
@@ -83,7 +83,7 @@ body {
   background-color: white;
   width: 225px;
   height: 225px;
-  margin: 5px;
+  margin: auto;
 }
 
 .box_image_slider {
@@ -142,7 +142,7 @@ body {
 }
 
 .text_contact {
-  margin: 0px;
+  margin: 8px;
   padding: 5px;
   text-align: center;
   font-size: 24px;
@@ -196,12 +196,12 @@ body {
   height: 50px;
   padding: 10px;
   text-align: center;
-  margin: 0;
+  margin: auto;
   visibility: hidden;
 }
 
 .page-footer {
-  height: 480px;
+  height: auto;
   max-width: calc(100% - 20px);
   padding: 10px;
   display: grid;
@@ -434,21 +434,21 @@ body {
   font-size: 16px;
 }
 
+.box_image_ONas {
+  float: left;
+  max-width: 300px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
 .mainONas {
   padding: 10px;
-  background-color: blueviolet;
-  max-width: 100%;
+  max-width: calc(100% - 40px);
   min-height: 300px;
-}
-
-.box_image_ONas {
-  float: right;
-  max-width: 300px;
-}
-
-.mainONas {
-  max-width: 100%;
-  min-height: 300px;
+  border: 1px darkgray solid;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .classContact {
@@ -504,9 +504,6 @@ body {
 }
 
 @media (max-width: 1250px) {
-  .container {
-    background-color: #F5F5F5;
-  }
   .slider_left, .slider_right {
     height: 300px;
   }
@@ -525,9 +522,6 @@ body {
 }
 
 @media (max-width: 1175px) {
-  .container {
-    background-color: #F5F5F5;
-  }
   .slider_left, .slider_right {
     height: 275px;
   }
@@ -537,9 +531,6 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .container {
-    background-color: #F5F5F5;
-  }
   .slider_left, .slider_right {
     height: 250px;
   }
@@ -563,6 +554,15 @@ body {
   .classAdvertising_right {
     display: block;
     width: 400px;
+  }
+  .text_contact {
+    margin: 3px;
+  }
+  .message-footer {
+    border-bottom: 0px;
+  }
+  .page-link-social {
+    border-left: 1px solid darkgray;
   }
 }
 
@@ -697,7 +697,7 @@ body {
 @media (max-width: 725px) {
   .box_image_advertising {
     width: 300px;
-    height: 150px;
+    height: 165px;
   }
   .classAdvertising_left, .classAdvertising_right {
     width: 300px;
@@ -726,7 +726,7 @@ body {
     display: block;
     position: absolute;
     left: 20px;
-    top: 215px;
+    top: 209px;
     background-color: grey;
     border: none;
     z-index: 1;
@@ -781,7 +781,7 @@ body {
   }
   .classItem {
     left: 20px;
-    top: 165px;
+    top: 159px;
   }
   .slider_left {
     height: 300px;
@@ -791,7 +791,7 @@ body {
     height: 150px;
   }
   .burger {
-    top: 130px;
+    top: 122px;
   }
 }
 
