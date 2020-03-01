@@ -440,7 +440,7 @@ body {
   padding-right: 10px;
 }
 
-.mainONas {
+.mainONas, .mainPricing {
   padding: 10px;
   max-width: calc(100% - 40px);
   min-height: 300px;
@@ -448,6 +448,28 @@ body {
   font-size: 1.5rem;
   margin: auto;
   margin-bottom: 10px;
+}
+
+.classPricing {
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+.info_Pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .classContact {

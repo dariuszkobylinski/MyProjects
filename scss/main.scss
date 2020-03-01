@@ -428,7 +428,7 @@ body {
   padding-right: $padding_main;
 }
 
-.mainONas {
+.mainONas, .mainPricing{
   padding: $padding_main;
   max-width: calc(100% - 40px);
   min-height: 300px;
@@ -436,6 +436,17 @@ body {
   font-size: 1.5rem;
   margin: auto;
   margin-bottom: 10px;
+
+.classPricing {
+  width: 75%;
+  height: auto;
+  margin:auto;
+}
+.info_Pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .classContact {
