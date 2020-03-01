@@ -428,7 +428,7 @@ body {
   padding-right: $padding_main;
 }
 
-.mainONas, .mainPricing{
+.mainONas, .mainPricing {
   padding: $padding_main;
   max-width: calc(100% - 40px);
   min-height: 300px;
@@ -436,9 +436,10 @@ body {
   font-size: 1.5rem;
   margin: auto;
   margin-bottom: 10px;
+}
 
 .classPricing {
-  width: 75%;
+  width: 50%;
   height: auto;
   margin:auto;
 }
