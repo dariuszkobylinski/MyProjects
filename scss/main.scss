@@ -212,7 +212,7 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  border-top: 3px solid darkgrey;
+  //border-top: 3px solid darkgrey;
   //gap:10px;
   //grid-template-areas: "message" "advertasing" "footer_summmary" "footer_summary";
   //display: flex;
@@ -443,18 +443,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  background-color: #daebee;
+  //border: 1px solid black;
+  background-color: lightgray;
   border-radius: 2px;
 }
 
 .classContactDetail,
 .classContactOpening {
-  padding: $padding_main;
+  //padding: $padding_main;
   font-size: 16px;
-  font-weight: bold;
-}
+  min-width: 80%;
+  border: 1px solid darkgray;
+  text-shadow: 1px 1px grey;
 
+}
+.pClassContactDetail {
+  padding: $padding_main;
+  margin: 0px;
+}
 @media (max-width: 1700px) {
   .container {
     width: 80%;
@@ -550,6 +556,16 @@ body {
   }
   .page-link-social {
     border-left: 1px solid darkgray;;
+  }
+  .classContactDetail {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #F5F5F5 ;
+    font-size: 18px;
+  }
+  .classContact {
+    border: 1px solid darkgray;
+    padding: $padding_main;
   }
 }
 
@@ -872,6 +888,7 @@ body {
   .slider_left {
     height: 275px;
   }
+
 }
 
 @media (max-width: 475px) {
