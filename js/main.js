@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         else {
             formInputField.children[6].style.visibility="hidden";
+
         }
     });
 
