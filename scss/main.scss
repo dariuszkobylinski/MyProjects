@@ -908,11 +908,14 @@ body {
   }
 
 }
-
-@media (max-width: 475px) {
-  .container {
-    height: 1500px;
+@media  (max-width: 485px)
+  {
+  .classLogoFooter {
+    font-size: 14px;
   }
+}
+@media (max-width: 475px) {
+
   .box_image_advertising {
     width: calc(100% - 20px);
   }
@@ -925,6 +928,9 @@ body {
 
   .slider_left {
     height: 250px;
+  }
+  .classLogoFooter {
+    font-size: 12px;
   }
 }
 
