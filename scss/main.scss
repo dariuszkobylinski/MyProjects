@@ -833,8 +833,6 @@ body {
   }
   .burger {
     visibility: visible;
-
-
   }
   .message-footer {
     display: flex;
@@ -912,7 +910,9 @@ body {
 }
 
 @media (max-width: 475px) {
-
+  .container {
+    height: 1500px;
+  }
   .box_image_advertising {
     width: calc(100% - 20px);
   }
@@ -945,7 +945,6 @@ body {
     height: 225px;
   }
 }
-
 .visible {
   visibility: visible;
 }
