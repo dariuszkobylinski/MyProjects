@@ -1,4 +1,3 @@
-
 /*Slider górny*/
 
 document.addEventListener("DOMContentLoaded", () => {

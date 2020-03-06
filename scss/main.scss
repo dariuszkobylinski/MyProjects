@@ -309,7 +309,7 @@ body {
   //grid-template-rows: 1fr;
   //grid-template-columns: 1fr 1fr;
   //gap: 10px;
-
+  //height: 300px;
 }
 
 .h3TextRight {
@@ -442,11 +442,12 @@ body {
 .classPricing {
   width: 55%;
   height: auto;
-  margin:auto;
+  margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: 10px 3px 10px darkgrey, darkgrey -3px 3px 10px, 3px -3px 10px;
 }
+
 .info_Pricing {
   display: flex;
   flex-direction: column;
@@ -457,6 +458,7 @@ body {
   background-position: center;
 
 }
+
 .pClassONas {
   margin: 0px;
 }
@@ -480,10 +482,12 @@ body {
   text-shadow: 1px 1px grey;
 
 }
+
 .pClassContactDetail {
   padding: $padding_main;
   margin: 0px;
 }
+
 @media (max-width: 1700px) {
   .container {
     width: 80%;
@@ -583,7 +587,7 @@ body {
   .classContactDetail {
     margin-top: 20px;
     margin-bottom: 20px;
-    background: #F5F5F5 ;
+    background: #F5F5F5;
     font-size: 18px;
   }
   .classContact {
@@ -932,13 +936,14 @@ body {
   }
 
 }
-@media  (max-width: 485px)
-  {
+
+@media (max-width: 485px) {
   .classLogoFooter {
     font-size: 14px;
   }
 
 }
+
 @media (max-width: 475px) {
   .box_image_advertising {
     width: calc(100% - 20px);
@@ -975,6 +980,7 @@ body {
     height: 225px;
   }
 }
+
 .visible {
   visibility: visible;
 }
