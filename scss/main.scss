@@ -530,15 +530,35 @@ body {
 
   }
   .classAdvertising_left {
-    width: 400px;
+    width: calc(100% - 20px);
+    height: 320px;
+    margin-top: 0px;
+    //height: auto;
+    //width: 500px;
+    //height: 350px;
   }
   .box_image_advertising {
-    width: 400px;
+    width: calc(100% - 10px);
+    height: 320px;
+    //width: 100%;
+    //height: 350px;
   }
-
+  .classSocialLink {
+    margin-top: 0px;
+  }
 
 }
 
+@media (max-width: 1130px) {
+  .classAdvertising_left {
+    width: calc(100% - 20px);
+    height: 320px;
+    margin-top: -20px;
+    //height: auto;
+    //width: 500px;
+    //height: 350px;
+  }
+}
 @media (max-width: 1175px) {
   .slider_left, .slider_right {
     height: 275px;
@@ -571,10 +591,21 @@ body {
     display: block;
   }
   .classAdvertising_right {
+    //display: block;
+    //width: calc(100% -20px);
+    //width: 400px;
     display: block;
-    width: 400px;
-
+    top: -48px;
   }
+  .classAdvertising_left, classAdvertasing_right {
+    position: relative;
+    padding: 5px;
+    width: calc((100% - 40px) / 2);
+    height: 325px;
+    top: 0px;
+    left: 0px;
+  }
+
   .text_contact {
     margin: 3px;
   }
@@ -738,29 +769,32 @@ body {
 
 @media (max-width: 900px) {
   .box_image_advertising {
-    width: 375px;
-    height: 225px;
+    //width: 375px;
+    height: 275px;
   }
   .classAdvertising_left, .classAdvertising_right {
-    width: 375px;
-    height: 225px;
+    //width: 375px;
+    height: 275px;
   }
 
   .classPricing {
     width: 65%;
+  }
+  .classAdvertising_right {
+    top: -10px;
   }
 
 }
 
 @media (max-width: 850px) {
   .box_image_advertising {
-    width: 350px;
-    height: 200px;
+    //width: 350px;
+    height: 250px;
   }
 
   .classAdvertising_left, .classAdvertising_right {
-    width: 350px;
-    height: 200px;
+    //width: 350px;
+    height: 250px;
   }
   .slider_left {
     height: 300px;
@@ -794,26 +828,25 @@ body {
 
 @media (max-width: 775px) {
   .box_image_advertising {
-    width: 325px;
-    height: 185px;
+    //width: 325px;
+    //height: 200px;
   }
 
   .classAdvertising_left, .classAdvertising_right {
-    width: 325px;
-    height: 185px;
+    //width: 325px;
+    //height: 200px;
   }
-
 }
 
 @media (max-width: 725px) {
   .box_image_advertising {
-    width: 300px;
-    height: 165px;
+    //width: 300px;
+    //height: 165px;
   }
 
   .classAdvertising_left, .classAdvertising_right {
-    width: 300px;
-    height: 150px;
+    //width: 300px;
+    //height: 150px;
   }
 
   .classPricing {
@@ -862,12 +895,12 @@ body {
     margin-bottom: 10px;
   }
   .box_image_advertising {
-    height: 275px;
-    width: 400px;
+    //height: 275px;
+    //width: 400px;
   }
   .classAdvertising_left {
-    height: 275px;
-    width: 400px;
+    height: 335px;
+    width: calc(100% - 20px)
   }
   .classAdvertising_right {
     display: none;
@@ -888,7 +921,9 @@ body {
     width: 200px;
     height: 200px;
   }
-
+.box_image_advertising {
+  height: 335px;
+}
 }
 
 @media (max-width: 575px) {
@@ -913,10 +948,11 @@ body {
 
 @media (max-width: 525px) {
   .box_image_advertising {
-    height: 250px;
+    height: 275px;
   }
   .classAdvertising_left {
-    height: 250px;
+    height: 275px;
+
   }
 
   .box_image_slider {
@@ -945,12 +981,6 @@ body {
 }
 
 @media (max-width: 475px) {
-  .box_image_advertising {
-    width: calc(100% - 20px);
-  }
-  .classAdvertising_left {
-    width: calc(100% - 20px);
-  }
   .box_image_slider {
     height: 250px;
   }
@@ -965,10 +995,10 @@ body {
 
 @media (max-width: 425px) {
   .box_image_advertising {
-    height: 200px;
+    height: 250px;
   }
   .classAdvertising_left {
-    height: 200px;
+    height: 250px;
   }
   //.footer_summary {
   //  height: 80px;
