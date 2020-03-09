@@ -834,6 +834,9 @@ body {
   .box_image_advertising {
     height: 335px;
   }
+  .classErrorMessage {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 575px) {
