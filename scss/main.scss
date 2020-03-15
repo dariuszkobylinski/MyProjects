@@ -15,8 +15,9 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: $background_main;
   min-width: 400px;
-  background-image: url("../img/rain-863339_1920.jpg");
-  background-size: cover;
+  background-color: #F5F5F5;
+  //background-image: url("../img/rain-863339_1920.jpg");
+  //background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
