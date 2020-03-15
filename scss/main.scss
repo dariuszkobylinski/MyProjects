@@ -17,6 +17,10 @@ body {
   min-width: 400px;
   background-image: url("../img/rain-863339_1920.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
