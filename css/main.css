@@ -1,8 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #F5F5F5;
-  min-width: 400px;
-  background-color: #F5F5F5;
+  min-width: 325px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
